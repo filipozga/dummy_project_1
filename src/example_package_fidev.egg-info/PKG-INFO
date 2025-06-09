@@ -1,0 +1,51 @@
+Metadata-Version: 2.4
+Name: example_package_fidev
+Version: 0.0.1
+Summary: A small example package
+Author-email: Example Author <author@example.com>
+License-Expression: MIT
+Project-URL: Homepage, https://github.com/pypa/sampleproject
+Project-URL: Issues, https://github.com/pypa/sampleproject/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENCE
+Dynamic: license-file
+
+# Project Title
+
+A brief description of what this project does and who it's for.
+
+## Table of Contents
+
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/yourusername/yourproject.git
+cd yourproject
+
+# Install dependencies
+pip install -r requirements.txt
+```
+
+## Usage
+
+```bash
+# Example command to run your project
+python main.py
+```
+
+## Contributing
+
+Contributions are welcome! Please open an issue or submit a pull request.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
