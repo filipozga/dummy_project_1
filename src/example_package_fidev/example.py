@@ -10,7 +10,18 @@ def add_one(number: int) -> int:
     """
     return number + 1
 
+
 def add_two(number: int) -> int:
+    """
+    Adds two to the given integer.
+
+    Args:
+        number (int): The integer to which two will be added.
+
+    Returns:
+        int: The result of adding two to the input integer.
+    """
+    return number + 2
 
 
 if __name__ == "__main__":
