@@ -22,6 +22,18 @@ jobs:
         flake8 src/ --max-line-length=120
     - name: Run tests with coverage
       run: |
-        pytest tests/ --cov=src/ --cov-report=xml
-    - name: Upload coverage reports
+        pytest tests/ --cov=src/ --cov-report=xml --cov-report=html --junitxml=pytest.xml
+    - name: Upload test results
+      uses: actions/upload-artifact@v3
+      if: always()
+      with:
+        name: pytest-results
+        path: |
+          pytest.xml
+          coverage.xml
+          htmlcov/
+    - name: Upload coverage to Codecov
       uses: codecov/codecov-action@v3
+      with:
+        file: ./coverage.xml
+        fail_ci_if_error: true
