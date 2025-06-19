@@ -10,7 +10,9 @@ def add_one(number: int) -> int:
     """
     return number + 1
 
+
 if __name__ == "__main__":
     # Example usage
     result = add_one(5)
     print(f"Result of adding one: {result}")
+    
