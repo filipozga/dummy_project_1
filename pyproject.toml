@@ -19,12 +19,21 @@ license-files = ["LICEN[CS]E*"]
 
 dependencies = [
     "flake8",
-    "flake8-pyproject"
+    "flake8-pyproject",
+    "black"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "pytest-cov>=4.0",
+    "coverage[toml]>=7.0",
+
 ]
 
 [project.urls]
-Homepage = "https://github.com/pypa/sampleproject"
-Issues = "https://github.com/pypa/sampleproject/issues"
+Homepage = "https://github.com/filipozga/dummy_project_1"
+Issues = "https://github.com/filipozga/dummy_project_1/issues"
 
 [tool.flake8]
 max-line-length = 120
@@ -38,3 +47,8 @@ extend-ignore = ["E203"]
 per-file-ignores = [
     "__init__.py:F401"
 ]
+
+[tool.black]
+line-length = 120
+target-version = ['py39']
+include = '\.pyw?$'
